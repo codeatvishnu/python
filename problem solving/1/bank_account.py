@@ -6,6 +6,7 @@ class BankAccounts:
     def __init__(self, ac_no, balance):
         self.ac_no = ac_no
         self.balance = balance
+        
     # create "deposit" method and deposit the user entered amount
     def deposit(self, deposit_amt):
         if deposit_amt > 0:
@@ -13,6 +14,7 @@ class BankAccounts:
             print(f"The {deposit_amt} deposited successfully ")
         else:
             print("Invalid  deposit amount!")
+            
     # create "withdraw" method and pass parameter to know the withdraw amount ,then cut amount from bank
     def withdraw(self, withdraw_amt):
         if self.balance < withdraw_amt <= 0:
